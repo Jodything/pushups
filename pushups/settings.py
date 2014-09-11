@@ -19,8 +19,6 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '#-2+byiet=(7dd^k%*8=q%v^h^q)2ac+$)6i#@imx87vvxgxoo'
-TWILIO_ACCOUNT_SID='AC1228449546e2367b274cc342487419dc'
-TWILIO_AUTH_TOKEN='b34cee3d99af7233b9e81dd885ad1e57'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -106,9 +104,18 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(PROJECT_PATH, 'static')]
 #AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
 
+#email verif. stuff
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_EMAIL_SUBJECT_PREFIX = '[Pushups App Registration]'
 SEND_ACTIVATION_EMAIL = True
 REGISTRATION_AUTO_LOGIN = False
+
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+DEFAULT_FROM_EMAIL = 'SGT@pushups.com'
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
