@@ -105,7 +105,7 @@ class RegistrationFormNoFreeEmail(RegistrationForm):
     override the attribute ``bad_domains``.
 
     """
-    bad_domains = ['aim.com', 'aol.com', 'email.com', 'gmail.com',
+    bad_domains = ['aim.com', 'aol.com', 'email.com',
                    'googlemail.com', 'hotmail.com', 'hushmail.com',
                    'msn.com', 'mail.ru', 'mailinator.com', 'live.com',
                    'yahoo.com']

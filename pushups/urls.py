@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^$',TemplateView.as_view(template_name='index.html'),name='index'),
 
     url(r'^accounts/',
-        include('registration.backends.simple.urls')),
+        include('registration.backends.default.urls')),
 
     url(r'^accounts/profile/',
         TemplateView.as_view(template_name='profile.html'),

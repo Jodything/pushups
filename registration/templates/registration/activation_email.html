@@ -23,7 +23,7 @@
 </p>
 
 <p>
-    <a href="http://{{ 127.0.0.1:5000/ }}{% url 'registration_activate' activation_key %}">
+    <a href="http://{{ site.name }}{% url 'registration_activate' activation_key %}">
         {{site.domain}}{% url 'registration_activate' activation_key %}
     </a>
 </p>

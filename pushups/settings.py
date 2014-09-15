@@ -18,7 +18,7 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = '#-2+byiet=(7dd^k%*8=q%v^h^q)2ac+$)6i#@imx87vvxgxoo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -108,5 +108,11 @@ REGISTRATION_EMAIL_SUBJECT_PREFIX = '[Pushups App Registration]'
 SEND_ACTIVATION_EMAIL = True
 REGISTRATION_AUTO_LOGIN = False
 
+EMAIL_TLS= True
+EMAIL_HOST= 'smtp.mandrillapp.com'
+EMAIL_PORT= '587'
+EMAIL_HOST_USER= 'jody@waypaver.co'
+EMAIL_HOST_PASSWORD= 'W9xSNi9MtAdKCqVeVoku1g'
+#SERVER_EMAIL = 'jody@waypaver.co'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
